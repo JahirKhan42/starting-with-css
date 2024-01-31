@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled HTML Form</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --input-background: #ecf0f1;
+            --input-text-color: #333;
+        }
+
+        /* Form styling */
+        form {
+            width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            background-color: var(--input-background);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: var(--input-text-color);
+        }
+
+        input[type="email"]{
+            margin-bottom: 10px ;
+           
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--input-background);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: var(--input-text-color);
+        }
+
+        /* Applying opacity to select dropdown */
+        #opacity-example {
+            opacity: 0.7;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <textarea placeholder="Enter your message"></textarea>
+        <br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter
+        <br>
+        <select id="opacity-example">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Examples</title>
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Q1-styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <div class="box" style="background-color: red;">Box 1 (Inline CSS)</div>
+
+    <!-- Internal CSS -->
+    <div class="box">Box 2 (Internal CSS)</div>
+
+    <!-- External CSS -->
+    <div class="box">Box 3 (External CSS)</div>
+
+    <!-- Inline CSS takes precedence over internal and external CSS -->
+    <!-- Internal CSS takes precedence over external CSS -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling with BEM</title>
+    <style>
+        /* Block: paragraph */
+        .paragraph {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        /* Element: heading inside paragraph */
+        .paragraph__heading {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* Element: content inside paragraph */
+        .paragraph__content {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Modifier: highlighted paragraph */
+        .paragraph--highlighted {
+            background-color: #ffe;
+        }
+
+        /* Modifier: large heading inside paragraph */
+        .paragraph__heading--large {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Block: paragraph -->
+    <div class="paragraph">
+        <!-- Element: heading inside paragraph -->
+        <h2 class="paragraph__heading">First Paragraph</h2>
+        <!-- Element: content inside paragraph -->
+        <p class="paragraph__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <!-- Block: paragraph -->
+    <div class="paragraph paragraph--highlighted">
+        <!-- Element: heading inside paragraph -->
+        <h2 class="paragraph__heading paragraph__heading--large">Second Paragraph</h2>
+        <!-- Element: content inside paragraph -->
+        <p class="paragraph__content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <!-- Block: paragraph -->
+    <div class="paragraph">
+        <!-- Element: heading inside paragraph -->
+        <h2 class="paragraph__heading">Third Paragraph</h2>
+        <!-- Element: content inside paragraph -->
+        <p class="paragraph__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</body>
+</html>
